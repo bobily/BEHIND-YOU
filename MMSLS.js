@@ -18,22 +18,22 @@ const MMSLS = [
 =====================请在下面编辑=====================
 =====================请在下面编辑=====================
  */
-康斯特 MMSLS = [康斯特 MMSLS = [* 生成随机数字 = [
+const MMSLS = [
     
     "https://www.maimemo.com/share/page?uid=11035971&pid=877a23469273249f4918cbe6161cff8e&tid=ac7355ee83f7aa17680687653ecbabbe",
     "https://www.maimemo.com/share/page?uid=11035971&pid=877a23469273249f4918cbe6161cff8e&tid=ac7355ee83f7aa17680687653ecbabbe",
     "https://www.maimemo.com/share/page?uid=11035971&pid=877a23469273249f4918cbe6161cff8e&tid=ac7355ee83f7aa17680687653ecbabbe",
   ]
   /**
-*@param{number}min最小值（）
-*@param{number}max最大值你
-函数随机数（min=0，max=100）{
+   * 生成随机数字
+   * @param {number} min 最小值（包含）
+   * @param {number} max 最大值（不包含）
    */
-函数随机数（min=0，max=100）{返回math.最小数学.Loor（米）+math.随机（）*（max-min）），max）； 康斯特 MMSL_random = MMSLS[随机数(0, MMSLS.长度)];(使用 = 0, 控制+换挡+m = 100) {
-返回math.最小数学.Loor（米）+math.随机（）*（max-min）），max）；切换 Math.突耳(Math.按键移动焦点。或者，使用(min + Math.E ë c() * (max - min)), max);
+  function randomNumber(min = 0, max = 100) {
+    return Math.min(Math.floor(min + Math.random() * (max - min)), max);
   }
-康斯特 MMSL_random = MMSLS[随机数(0, MMSLS.长度)];然后 MMSL_random = MMSLS[突耳(0, MMSLS.移动到页面上的下一个交互元素。)];
+  const MMSL_random = MMSLS[randomNumber(0, MMSLS.length)];
   
-  module.出口 = {
+  module.exports = {
     MMSL_random
   }
